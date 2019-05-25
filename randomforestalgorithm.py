@@ -8,7 +8,7 @@ import pandas as pd
 def importdata(): 
     balance_data = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/undocumented/connectionist-bench/sonar/sonar.all-data', 
 	sep= ',', header = None) 
-	#balance_data = pd.read_csv("data_banknote_authentication.csv")
+    #balance_data = pd.read_csv("data_banknote_authentication.csv")
     #balance_data = pd.read_csv("sonaralldata.csv")
 	# Printing the dataswet shape 
     print ("Dataset Lenght: ", len(balance_data)) 
@@ -208,7 +208,6 @@ def random_forest(train, test, max_depth, min_size, sample_size, n_trees, n_feat
 seed(2)
 # load and prepare data
 #filename='data_banknote_authentication.csv'
-#filename='dt01.csv'
 #dataset = load_csv(filename)
 dataset = importdata()
 # convert string attributes to integers
